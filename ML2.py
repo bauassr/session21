@@ -39,6 +39,9 @@ from sklearn.linear_model import LinearRegression
 
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
+#check your model score 
+regressor.intercept_
+regressor.coef_
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
